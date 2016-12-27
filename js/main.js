@@ -232,12 +232,10 @@ function begin(){
         numhon = 200;
         probHon = 0.03;
     }
-    var nam = document.getElementById('nameA');
-    nam.style.visibility = 'visible';
+    $("#nameA").css({visibility: 'visible', left: window.innerWidth/2-25});
     var nombrep = $('#nombre').html();
     $('#nameA').html(nombrep)
-    var pun = document.getElementById('Puntuacion');
-    pun.style.visibility = 'visible';
+    $("#Puntuacion").css({visibility: 'visible', left: window.innerWidth/2-25, top: window.innerHeight-25});
     $('#Puntuacion').html("Puntuacion " + puntos);
     todo(colum,fila, numhon, probHon);
 }
