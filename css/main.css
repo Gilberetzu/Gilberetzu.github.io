@@ -1,0 +1,57 @@
+#menu {
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #f32;
+    transition: all 0.5s;
+    padding: 10px;
+}
+.sep {
+    margin: 10px;
+}
+#nameA {
+    z-index: 1;
+    position: absolute;
+    left: 450px;
+    top: 0px;
+    border-radius: 10px;
+    border: 2px solid #73AD21;
+    padding: 10px;
+    background-color: white;
+    visibility: hidden;
+}
+
+#Puntuacion {
+    z-index: 1;
+    position: absolute;
+    left: 450px;
+    top: 1000px;
+    border-radius: 10px;
+    border: 2px solid #73AD21;
+    padding: 10px;
+    background-color: white;
+    visibility: hidden;
+}
+
+#GO{
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1000px;
+    height: 1000px;
+    background-color: black;
+    visibility: hidden;
+}
+#GOT{
+    z-index: 1;
+    position: absolute;
+    left: 350px;
+    top: 450px;
+    color: white;
+    font-size: 30px;
+    visibility: hidden;
+}
