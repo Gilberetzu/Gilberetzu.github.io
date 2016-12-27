@@ -4,8 +4,8 @@ function todo(col, fil, numh, probH){
     menu.style.display = 'none';
     var CV = document.getElementById('canvas3');
     var context = CV.getContext('2d');
-    var width = window.innerWidth;
-    var heigth = window.innerHeight;
+    var width = window.innerWidth-50;
+    var heigth = window.innerHeight-50;
     var centerx = width/2;
     var centery = heigth/2;
     
@@ -235,7 +235,7 @@ function begin(){
     $("#nameA").css({visibility: 'visible', left: window.innerWidth/2-25});
     var nombrep = $('#nombre').html();
     $('#nameA').html(nombrep)
-    $("#Puntuacion").css({visibility: 'visible', left: window.innerWidth/2-25, top: window.innerHeight-25});
+    $("#Puntuacion").css({visibility: 'visible', left: window.innerWidth/2-25, top: window.innerHeight-50});
     $('#Puntuacion').html("Puntuacion " + puntos);
     todo(colum,fila, numhon, probHon);
 }
