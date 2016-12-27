@@ -4,8 +4,8 @@ function todo(col, fil, numh, probH){
     menu.style.display = 'none';
     var CV = document.getElementById('canvas3');
     var context = CV.getContext('2d');
-    var width = 1000;
-    var heigth = 1000;
+    var width = window.innerWidth;
+    var heigth = window.innerHeight;
     var centerx = width/2;
     var centery = heigth/2;
     
