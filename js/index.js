@@ -3,10 +3,9 @@ function changeIdValue(value, id) {
 }
 
 function cambiar() {
-    if ($('#game').html() == "") {
+    if ($('#game').text() != "-") {
         window.location.replace($('#game').html() + ".html");
     } else {
         alert("no has seleccionado juego");
     }
-
 }
