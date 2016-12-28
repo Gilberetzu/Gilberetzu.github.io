@@ -241,6 +241,7 @@ function begin() {
     var nombrep = $('#nombre').html();
     $('#nameA').html(nombrep)
     $("#Puntuacion").css({ visibility: 'visible', left: window.innerWidth / 2 - 25, top: window.innerHeight - 50 });
+    $("#atras").css({ visibility: 'hidden' });
     $('#Puntuacion').html("Puntuacion " + puntos);
     todo(colum, fila, numhon, probHon);
 }
@@ -254,4 +255,8 @@ function gameover() {
     pun.style.visibility = 'visible';
     var pun = document.getElementById('GOT');
     pun.style.visibility = 'visible';
+}
+
+function atrass() {
+    window.location.replace("index.html");
 }

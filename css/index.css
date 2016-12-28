@@ -1,0 +1,11 @@
+#menu {
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #f32;
+    transition: all 0.5s;
+    padding: 10px;
+}

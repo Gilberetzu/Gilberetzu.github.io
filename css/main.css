@@ -9,9 +9,11 @@
     transition: all 0.5s;
     padding: 10px;
 }
+
 .sep {
     margin: 10px;
 }
+
 #nameA {
     z-index: 1;
     position: absolute;
@@ -36,7 +38,7 @@
     visibility: hidden;
 }
 
-#GO{
+#GO {
     z-index: 1;
     position: absolute;
     left: 0px;
@@ -46,7 +48,8 @@
     background-color: black;
     visibility: hidden;
 }
-#GOT{
+
+#GOT {
     z-index: 1;
     position: absolute;
     left: 350px;
@@ -54,4 +57,12 @@
     color: white;
     font-size: 30px;
     visibility: hidden;
+}
+
+#atras {
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 300px;
+    padding: 10px;
 }
