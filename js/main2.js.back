@@ -1,0 +1,49 @@
+function GE1() {
+    var CV, context, width, height, centerx, centery, sc = 1 / 2;
+
+    var init = function(cID) {
+
+        CV = document.getElementById(cID);
+        context = CV.getContext('2d');
+        width = window.innerWidth - 50;
+        heigth = window.innerHeight - 50;
+        centerx = width / 2;
+        centery = heigth / 2;
+
+        CV.setAttribute("width", width);
+        CV.setAttribute("height", heigth);
+    }
+
+    var atrass = function() {
+        window.location.replace("index.html");
+    }
+
+    var findAngle = function(X2, Y2, X1, Y1) {
+        var ang;
+        if ((X2 >= X1) && (Y2 <= Y1)) {
+            ang = Math.atan((Y1 - Y2) / (X2 - X1));
+        } else if ((X2 <= X1) && (Y2 <= Y1)) {
+            ang = Math.atan((X1 - X2) / (Y1 - Y2)) + Math.PI / 2;
+        } else if ((X2 <= X1) && (Y2 >= Y1)) {
+            ang = Math.atan((Y2 - Y1) / (X1 - X2)) + Math.PI;
+        } else if ((X2 >= X1) && (Y2 >= Y1)) {
+            ang = Math.atan((X2 - X1) / (Y2 - Y1)) + Math.PI * (3 / 2);
+        }
+        return ang;
+    }
+
+    var newPlayer = function(name, posX, posY) {
+        this.name = name;
+        this.posX = posX;
+        this.posY = posY;
+    }
+
+    var pLimitX = function(pX, pY, worldR) {
+        for (var i = 0; i < worldR.length; i++) {
+            if (worldR[i][0] == "solid") {
+                var ang = findAngle(worldR[i][1], worldR[i][2], pX, pY);
+
+            }
+        }
+    }
+}

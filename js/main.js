@@ -24,7 +24,6 @@ function todo(col, fil, numh, probH) {
                 y = y + 1;
             }
         }
-
         return euri;
     }
 
@@ -108,7 +107,7 @@ function todo(col, fil, numh, probH) {
 
         ang = buscarAngulo(mX, mY, centerx, centery);
         if (r >= 20) {
-            vel = 2;
+            vel = 25;
         } else {
             vel = 0;
         }
@@ -190,7 +189,7 @@ function mouseC(event) {
 
 var mX = 503;
 var mY = 503;
-var sc = 1 / 4;
+var sc = 4 / 1;
 var mM = document.getElementById('canvas3');
 mM.setAttribute("onmousemove", "mouseC(event)");
 /*mM.setAttribute("onmouseout","mouseCl()"); */
