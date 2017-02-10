@@ -4,23 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | prueva3</title>
-    <style>
-    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
-    </style>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
   </head>
-  <body>
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+  <body class="template">
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">prueva3</div>
+    </div>
     <script type='text/javascript'>
   var Module = {
-    TOTAL_MEMORY: 67108864,
+    TOTAL_MEMORY: 134217728,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
-    backgroundColor: "#222C36",
-    splashStyle: "Light",
-    dataUrl: "Release/lastversion2.data",
-    codeUrl: "Release/lastversion2.js",
-    asmUrl: "Release/lastversion2.asm.js",
-    memUrl: "Release/lastversion2.mem",
+    backgroundColor: "#FFFFFF",
+    splashStyle: "Dark",
+    dataUrl: "Release/V2.0.data",
+    codeUrl: "Release/V2.0.js",
+    asmUrl: "Release/V2.0.asm.js",
+    memUrl: "Release/V2.0.mem",
   };
 </script>
 <script src="Release/UnityLoader.js"></script>
